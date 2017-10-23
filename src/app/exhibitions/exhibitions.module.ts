@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ExhibitionsRoutingModule } from './exhibitions-routing.module';
+import { routing } from './exhibitions-routing.module';
 import { ExhibitionsComponent } from './exhibitions.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    ExhibitionsRoutingModule
+    routing
   ],
   declarations: [ExhibitionsComponent]
 })

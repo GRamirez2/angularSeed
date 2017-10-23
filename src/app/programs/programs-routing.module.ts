@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ProgramsComponent } from './programs.component';
@@ -8,9 +8,4 @@ const routes: Routes = [
   component: ProgramsComponent}
 ];
 
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-  providers: []
-})
-export class ProgramsRoutingModule { }
+export const routing: ModuleWithProviders = RouterModule.forChild(routes)

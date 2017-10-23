@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
 
-export const ROUTES: Routes = [
+const routes: Routes = [
     {path: '',
     component: HomeComponent},
 
@@ -32,8 +32,4 @@ export const ROUTES: Routes = [
       redirectTo: 'not-found'}
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(ROUTES)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+export const routing: ModuleWithProviders = RouterModule.forRoot(routes)
