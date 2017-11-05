@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 
-const routes: Routes = [
+export const routes: Routes = [
     {path: '',
     component: HomeComponent},
 
@@ -31,5 +31,3 @@ const routes: Routes = [
     { path: '**',
       redirectTo: 'not-found'}
 ];
-
-export const routing: ModuleWithProviders = RouterModule.forRoot(routes)
